@@ -1,1 +1,149 @@
-/* Your stylesheet goes here */
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+body {
+	font-family: 'Lato', Helvetica Neue, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #E9EAEE;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Raleway', Helvetica Neue, Helvetica, sans-serif;
+}
+h2{
+	padding-left: 12px;
+	color: #BC6026;
+}
+svg{
+	height: 1em;
+}
+
+nav{
+	background-color: #181C22;
+	color: white;
+	font-size: 16px;
+	padding-left: 0px;
+	padding-top: 10px;
+	position: fixed;
+	width: 100%;
+}
+ul{
+	padding-left: 0px;
+}
+nav li{
+	display: inline;
+}
+nav a{
+	padding: 0.5em;
+	font-variant: small-caps;
+	color: white;
+}
+nav a.cupicon{
+	margin-left:15px;
+}
+nav a:hover{
+	color: #D87E28;
+	text-decoration: none;
+}
+nav svg{
+	fill: white;
+}
+nav svg:hover{
+	fill: #D87E28;
+}
+
+#header{
+	padding-top: 3em;
+	padding-right: 3em;
+}
+#motto{
+	display: none;
+}
+.container{
+	margin:0px;
+	padding-left: 0px;
+}
+#headline{
+	font-style: italic;
+}
+#headline svg{
+	display: none;
+}
+#information svg{
+	fill: #D87E28;
+	margin-bottom : 1.5em;
+	margin-top: 1.5em;
+	height: 1.5em;
+}
+#information #map{
+    border-radius: 5px;
+}
+
+#menu.category{
+	
+}
+#menu .menu-name{
+	font-weight:bold;
+}
+#menu .description{
+	padding-left: 1em;
+	font-style:italic;
+}
+@media (min-width: 768px){
+	body {
+		font-size: 20px;
+	}
+	h2{
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	nav{
+		background-color: rgba(24, 28, 34, 0.8);
+	}
+	nav a{
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+	#header{
+		height: 550px;
+		width: 100%;
+		text-align:right;
+		color:white;
+		padding-bottom:0px;
+		background-color: black;
+		background-image:url(../img/background-sm.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	#motto{
+		display:initial;
+	}
+	#headline{
+		text-align: center;
+		font-size: 1.25em;
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+	#headline svg{
+		align: center;
+		display: initial;
+		height: 1.5em;
+		fill: #D87E28;
+		margin-bottom: 1em;
+	}
+}
+@media (min-width: 992px){
+	#header{
+		background-image:url("../img/background-md.jpg");
+	}
+	#header h1{
+		font-size:4em;
+	}
+}
+@media (min-width: 1200px){
+	#header{
+		background-image:url("../img/background-lg.jpg");
+	}
+}
