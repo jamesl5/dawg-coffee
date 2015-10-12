@@ -29,7 +29,7 @@ nav{
 	position: fixed;
 	width: 100%;
 }
-ul{
+nav ul{
 	padding-left: 0px;
 }
 nav li{
@@ -40,7 +40,7 @@ nav a{
 	font-variant: small-caps;
 	color: white;
 }
-nav a.cupicon{
+nav #cupicon{
 	margin-left:15px;
 }
 nav a:hover{
@@ -57,32 +57,37 @@ nav svg:hover{
 #header{
 	padding-top: 3em;
 	padding-right: 3em;
+	padding-left: 1em;
+	margin: 0px;
 }
-#motto{
+#header #motto{
 	display: none;
 }
-.container{
-	margin:0px;
-	padding-left: 0px;
-}
+
 #headline{
 	font-style: italic;
 }
 #headline svg{
 	display: none;
 }
-#information svg{
+#cafe {
+	background-color: #dbdce3;
+	padding-bottom: 1em;
+	width: 100%;
+}
+#cafe svg{
 	fill: #D87E28;
 	margin-bottom : 1.5em;
 	margin-top: 1.5em;
 	height: 1.5em;
 }
-#information #map{
+#cafe #map{
     border-radius: 5px;
 }
 
-#menu.category{
-	
+#menu{
+	width: 100%;
+	padding-bottom: 1em;
 }
 #menu .menu-name{
 	font-weight:bold;
@@ -90,6 +95,30 @@ nav svg:hover{
 #menu .description{
 	padding-left: 1em;
 	font-style:italic;
+}
+
+#story{
+	background-color: #dbdce3;
+	width: 100%;
+	padding-bottom: 1em;
+}
+#story #story-image{
+	float: right;
+	height:300px;
+	margin-left:1em;
+	border-radius: 5px;
+}
+#footer{
+	border-top:3px;
+	border-top-style: solid;
+	padding-top: 1em;
+	border-color: #d87e28;
+	width:100%;
+	background-color: #afb3c2;
+	font-size:12px;
+}
+#coming{
+	padding-top: 1em;
 }
 @media (min-width: 768px){
 	body {
@@ -117,7 +146,7 @@ nav svg:hover{
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-	#motto{
+	#header #motto{
 		display:initial;
 	}
 	#headline{
@@ -127,11 +156,17 @@ nav svg:hover{
 		padding-bottom: 3em;
 	}
 	#headline svg{
-		align: center;
+
 		display: initial;
 		height: 1.5em;
 		fill: #D87E28;
 		margin-bottom: 1em;
+	}
+	#story #story-image{
+		height: 400px;
+	}
+	#footer .align{
+		text-align: right;
 	}
 }
 @media (min-width: 992px){
