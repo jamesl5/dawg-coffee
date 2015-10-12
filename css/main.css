@@ -1,7 +1,13 @@
+/* imported following items:
+ bootstrap ver. 3.3.5, 
+ font-awsome, 
+ font Lato, 
+ and Raleway, */
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+/* overall settings */
 body {
 	font-family: 'Lato', Helvetica Neue, Helvetica, sans-serif;
 	font-size: 16px;
@@ -20,6 +26,7 @@ svg{
 	height: 1em;
 }
 
+/* navigation bar style */
 nav{
 	background-color: #181C22;
 	color: white;
@@ -54,6 +61,7 @@ nav svg:hover{
 	fill: #D87E28;
 }
 
+/* header section style */
 #header{
 	padding-top: 3em;
 	padding-right: 3em;
@@ -70,6 +78,8 @@ nav svg:hover{
 #headline svg{
 	display: none;
 }
+
+/* cafe information section style */
 #cafe {
 	background-color: #dbdce3;
 	padding-bottom: 1em;
@@ -85,6 +95,7 @@ nav svg:hover{
     border-radius: 5px;
 }
 
+/* menu section style */
 #menu{
 	width: 100%;
 	padding-bottom: 1em;
@@ -97,6 +108,7 @@ nav svg:hover{
 	font-style:italic;
 }
 
+/* story section style */
 #story{
 	background-color: #dbdce3;
 	width: 100%;
@@ -108,6 +120,8 @@ nav svg:hover{
 	margin-left:1em;
 	border-radius: 5px;
 }
+
+/*footer section style */
 #footer{
 	border-top:3px;
 	border-top-style: solid;
@@ -117,9 +131,12 @@ nav svg:hover{
 	background-color: #afb3c2;
 	font-size:12px;
 }
+/* Style for order page */
 #coming{
 	padding-top: 1em;
 }
+
+/* Settings below apply when screen size is 768px or higher */
 @media (min-width: 768px){
 	body {
 		font-size: 20px;
@@ -135,17 +152,18 @@ nav svg:hover{
 		padding-right: 1em;
 		padding-left: 1em;
 	}
+	/* Dawg Coffee image is inserted in the header section*/
 	#header{
 		height: 550px;
 		width: 100%;
 		text-align:right;
 		color:white;
 		padding-bottom:0px;
-		background-color: black;
 		background-image:url(../img/background-sm.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
+	/* motto is displayed */
 	#header #motto{
 		display:initial;
 	}
@@ -155,8 +173,9 @@ nav svg:hover{
 		padding-top: 3em;
 		padding-bottom: 3em;
 	}
+	
+	/* settings for cup image in the headline section*/
 	#headline svg{
-
 		display: initial;
 		height: 1.5em;
 		fill: #D87E28;
@@ -169,6 +188,7 @@ nav svg:hover{
 		text-align: right;
 	}
 }
+/* Settings below apply when screen size is 992px or higher */
 @media (min-width: 992px){
 	#header{
 		background-image:url("../img/background-md.jpg");
@@ -177,6 +197,7 @@ nav svg:hover{
 		font-size:4em;
 	}
 }
+/* Settings below apply when screen size is 1200px or higher */
 @media (min-width: 1200px){
 	#header{
 		background-image:url("../img/background-lg.jpg");
