@@ -9,197 +9,183 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 /* overall settings */
 body {
-	font-family: 'Lato', Helvetica Neue, Helvetica, sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	background-color: #E9EAEE;
-}
+  font-family: 'Lato', Helvetica Neue, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #E9EAEE; }
 
-h1, h2, h3, h4, h5, h6{
-	font-family: 'Raleway', Helvetica Neue, Helvetica, sans-serif;
-}
-h2{
-	padding-left: 12px;
-	color: #BC6026;
-}
-svg{
-	height: 1em;
-}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', Helvetica Neue, Helvetica, sans-serif; }
+
+h2 {
+  padding-left: 12px;
+  color: #BC6026; }
+
+svg {
+  height: 1em; }
 
 /* navigation bar style */
-nav{
-	background-color: #181C22;
-	color: white;
-	font-size: 16px;
-	padding-left: 0px;
-	padding-top: 10px;
-	position: fixed;
-	width: 100%;
-}
-nav ul{
-	padding-left: 0px;
-}
-nav li{
-	display: inline;
-}
-nav a{
-	padding: 0.5em;
-	font-variant: small-caps;
-	color: white;
-}
-nav #cupicon{
-	margin-left:15px;
-}
-nav a:hover{
-	color: #D87E28;
-	text-decoration: none;
-}
-nav svg{
-	fill: white;
-}
-nav svg:hover{
-	fill: #D87E28;
-}
+nav {
+  background-color: #181C22;
+  color: white;
+  font-size: 16px;
+  padding-left: 0px;
+  padding-top: 10px;
+  position: fixed;
+  width: 100%; }
+
+nav ul {
+  padding-left: 0px; }
+
+nav li {
+  display: inline; }
+
+nav a {
+  padding: 0.5em;
+  font-variant: small-caps;
+  color: white; }
+
+nav #cupicon {
+  margin-left: 15px; }
+
+nav a:hover {
+  color: #D87E28;
+  text-decoration: none; }
+
+nav svg {
+  fill: white; }
+
+nav svg:hover {
+  fill: #D87E28; }
 
 /* header section style */
-#header{
-	padding-top: 3em;
-	padding-right: 3em;
-	padding-left: 1em;
-	margin: 0px;
-}
-#header #motto{
-	display: none;
-}
+#header {
+  padding-top: 3em;
+  padding-right: 3em;
+  padding-left: 1em;
+  margin: 0px; }
 
-#headline{
-	font-style: italic;
-}
-#headline svg{
-	display: none;
-}
+#header #motto {
+  display: none; }
+
+#headline {
+  font-style: italic; }
+
+#headline svg {
+  display: none; }
 
 /* cafe information section style */
 #cafe {
-	background-color: #dbdce3;
-	padding-bottom: 1em;
-	width: 100%;
-}
-#cafe svg{
-	fill: #D87E28;
-	margin-bottom : 1.5em;
-	margin-top: 1.5em;
-	height: 1.5em;
-}
-#cafe #map{
-    border-radius: 5px;
-}
+  background-color: #dbdce3;
+  padding-bottom: 1em;
+  width: 100%; }
+
+#cafe svg {
+  fill: #D87E28;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  height: 1.5em; }
+
+#cafe #map {
+  border-radius: 5px; }
 
 /* menu section style */
-#menu{
-	width: 100%;
-	padding-bottom: 1em;
-}
-#menu .menu-name{
-	font-weight:bold;
-}
-#menu .description{
-	padding-left: 1em;
-	font-style:italic;
-}
+#menu {
+  width: 100%;
+  padding-bottom: 1em; }
+
+#menu .menu-name {
+  font-weight: bold; }
+
+#menu .description {
+  padding-left: 1em;
+  font-style: italic; }
 
 /* story section style */
-#story{
-	background-color: #dbdce3;
-	width: 100%;
-	padding-bottom: 1em;
-}
-#story #story-image{
-	float: right;
-	height:300px;
-	margin-left:1em;
-	border-radius: 5px;
-}
+#story {
+  background-color: #dbdce3;
+  width: 100%;
+  padding-bottom: 1em; }
+
+#story #story-image {
+  float: right;
+  height: 300px;
+  margin-left: 1em;
+  border-radius: 5px; }
 
 /*footer section style */
-#footer{
-	border-top:3px;
-	border-top-style: solid;
-	padding-top: 1em;
-	border-color: #d87e28;
-	width:100%;
-	background-color: #afb3c2;
-	font-size:12px;
-}
+#footer {
+  border-top: 3px;
+  border-top-style: solid;
+  padding-top: 1em;
+  border-color: #d87e28;
+  width: 100%;
+  background-color: #afb3c2;
+  font-size: 12px; }
+
 /* Style for order page */
-#coming{
-	padding-top: 1em;
-}
+#coming {
+  padding-top: 1em; }
 
 /* Settings below apply when screen size is 768px or higher */
-@media (min-width: 768px){
-	body {
-		font-size: 20px;
-	}
-	h2{
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	nav{
-		background-color: rgba(24, 28, 34, 0.8);
-	}
-	nav a{
-		padding-right: 1em;
-		padding-left: 1em;
-	}
-	/* Dawg Coffee image is inserted in the header section*/
-	#header{
-		height: 550px;
-		width: 100%;
-		text-align:right;
-		color:white;
-		padding-bottom:0px;
-		background-image:url(../img/background-sm.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	/* motto is displayed */
-	#header #motto{
-		display:initial;
-	}
-	#headline{
-		text-align: center;
-		font-size: 1.25em;
-		padding-top: 3em;
-		padding-bottom: 3em;
-	}
-	
-	/* settings for cup image in the headline section*/
-	#headline svg{
-		display: initial;
-		height: 1.5em;
-		fill: #D87E28;
-		margin-bottom: 1em;
-	}
-	#story #story-image{
-		height: 400px;
-	}
-	#footer .align{
-		text-align: right;
-	}
-}
+@media (min-width: 768px) {
+  body {
+    font-size: 20px; }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1em; }
+
+  nav {
+    background-color: rgba(24, 28, 34, 0.8); }
+
+  nav a {
+    padding-right: 1em;
+    padding-left: 1em; }
+
+  /* Dawg Coffee image is inserted in the header section*/
+  #header {
+    height: 550px;
+    width: 100%;
+    text-align: right;
+    color: white;
+    padding-bottom: 0px;
+    background-image: url(../img/background-sm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+  /* motto is displayed */
+  #header #motto {
+    display: initial; }
+
+  #headline {
+    text-align: center;
+    font-size: 1.25em;
+    padding-top: 3em;
+    padding-bottom: 3em; }
+
+  /* settings for cup image in the headline section*/
+  #headline svg {
+    display: initial;
+    height: 1.5em;
+    fill: #D87E28;
+    margin-bottom: 1em; }
+
+  #story #story-image {
+    height: 400px; }
+
+  #footer .align {
+    text-align: right; } }
 /* Settings below apply when screen size is 992px or higher */
-@media (min-width: 992px){
-	#header{
-		background-image:url("../img/background-md.jpg");
-	}
-	#header h1{
-		font-size:4em;
-	}
-}
+@media (min-width: 992px) {
+  #header {
+    background-image: url("../img/background-md.jpg"); }
+
+  #header h1 {
+    font-size: 4em; } }
 /* Settings below apply when screen size is 1200px or higher */
-@media (min-width: 1200px){
-	#header{
-		background-image:url("../img/background-lg.jpg");
-	}
-}
+@media (min-width: 1200px) {
+  #header {
+    background-image: url("../img/background-lg.jpg"); } }
+
+/*# sourceMappingURL=main.css.map */
